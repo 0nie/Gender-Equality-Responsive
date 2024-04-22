@@ -309,6 +309,52 @@ nav{
     text-align: center;
 }
 
+.scrollup{
+    color: #fff;
+    position: fixed;
+    right: 2rem;
+    bottom: -30%;
+    background-color: var(--primary-color-dark);
+    display: inline-flex;
+    padding: .35rem;
+    font-size: 1.25rem;
+    z-index: 10;
+    transition: 1s;
+    scroll-behavior: smooth;
+}
+
+.show-scroll{
+    bottom: 3rem;
+}
+
+.scrollup{
+    transform: translateY(-.35rem);
+}
+
+/* Cursor */
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+}
+
+.cursor-outline{
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
  /* RESPONSIVENESS */
 
 @media(width > 300px){
